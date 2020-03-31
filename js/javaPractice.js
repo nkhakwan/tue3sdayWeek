@@ -1,3 +1,67 @@
+// This file contain js code that is practiced 
+// +++++++++++++++++++++++++ Practice For "for" loop ++++++++++++++++++++++++
+var total =0;
+for (var i=0; i< 30; i+=5){
+  total += i;
+}
+alert (total);
+
+var total =0;
+for (var i=0; i< 30; i+=7){
+  total += i;
+}
+alert (total);
+
+// BTW total for above was a smaller number for i +=7;
+
+var anArray = [1, 4, 7, 9, 11];
+var anotherArray =[];
+for (var i=0; i < anArray.length; i+=1){
+  anotherArray.push(anArray[i] * 2);
+}
+anotherArray;
+
+var anArray = [1, 4, 7, "what is it", 11];
+var anotherArray =[];
+for (var i=0; i < anArray.length; i+=1){
+  if (parseInt(anArray[i])){
+  anotherArray.push(anArray[i] * 2);
+  } else {
+    anotherArray.push("not a number");
+  }
+}
+anotherArray;
+
+var aString ="Believe you can and you're halfway there. Theodore Roosevelt";
+var withoutVowels;
+for (var i=0; i <aString.length; i+=1){
+  if (aString[i] === ("e" || "o" || "i")){
+    //aString[i] = "-";
+    alert("yes");}
+  else {
+    //aString[i] = aString[i];
+    alert("no");}
+}
+
+var aString = "Believe you can and you're halfway there. Theodore Roosevelt";
+var aStringArray = aString.split('');
+for (var i=0; i <aStringArray.length; i+=1){
+  if (aStringArray[i] === "e" || aStringArray[i] ==="o" || aStringArray[i] ==="i"){
+    aStringArray[i] = "-";
+    }
+  else {
+    aStringArray[i] = aStringArray[i];
+  }
+}
+var final = aStringArray.join(' ');
+
+
+
+
+// +++++++++++++++++ Practice for forEach and Arrays +++++++++++++++++++++++++++++++++++++
+
+
+
 var myMoviesCharacters = ["Gregory Peck", "Sophia Lauren", "Raquel Welch", "Charles Bronson", "Anthony Quinn"];
 var citiesWeHaveVisited = ["HonoLulu", "Kona", "Hilo", 12, 38, 346000];
 var concatenated = myMoviesCharacters.concat(citiesWeHaveVisited);
