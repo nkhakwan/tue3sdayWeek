@@ -24,10 +24,22 @@
   <input id="add2" class="form-control" type="text">
 </div>
 
+// corresponding js example 
+
+var highSchool = parseInt($("#highSchool").val());
+    var javaScript = parseInt($("#javaScript").val());
+    var engineeringDegree = parseInt($("#engineeringDegree").val());
+    var interest = parseInt($("#interest").val());
+    var aptitude = parseInt($("#aptitude").val());
+    var selection = parseInt($("#courseType").val());
+
+
 <!-- Examples for the button. For JS file it would be  $("#form.courseSelection").submit if the button is inside that form class-->
 <div id=myButton>
   <button type="submit" class="btn">Enter</button>
 </div>
+
+
 
 <!-- Another example of inputting text from jQuery -->
 
@@ -43,8 +55,9 @@
       <label for="person1">A name</label>
       <input id="person1" class="form-control" type="text">
     </div>
-    
+
 blanks.forEach(function(blank) {
   var userInput = $("input." + blank).val();
-  $("." + blank).text(userInput).val();      
+  $("." + blank).text(userInput).val();    $("#" + blank) // shouldn't it be   
 });
+$("#story").show();
